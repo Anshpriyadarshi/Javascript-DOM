@@ -16,3 +16,4 @@ btn2.addEventListener("click", function () {
 btn3.addEventListener("click", function () {
     output.innerHTML = "You have learned how to connect JavaScript with HTML!";
 });
+
