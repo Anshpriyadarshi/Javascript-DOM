@@ -1,19 +1,23 @@
-const heading = document.getElementById("heading");
-const btn1 = document.getElementById("btn1");
-const btn2 = document.getElementById("btn2");
-const btn3 = document.getElementById("btn3");
-const output = document.getElementById("output");
+let a = document.getElementsByClassName("btn-1")
+console.log(a[0])
+let b = document.getElementById("btn2")
+console.log(b)
 
-btn1.addEventListener("click", function () {
-    heading.innerHTML = "JavaScript is Successfully Connected!";
-});
+let bool = true;
+b.addEventListener("mouseover", func);
+function func() {
+    //     if (bool) {
+    //         b.style.backgroundColor = "red";
+    //         bool = false;
 
-btn2.addEventListener("click", function () {
-    heading.style.color = "crimson";
-    heading.style.backgroundColor = "#ffffff";
-});
+    // else {
+    //             b.style.backgroundColor = "yellow";
+    //             bool = true;
 
-btn3.addEventListener("click", function () {
-    output.innerHTML = "You have learned how to connect JavaScript with HTML!";
-});
-
+    if (b.style.backgroundColor == "red") {
+        b.style.backgroundColor = "yellow";
+    }
+    else {
+        b.style.backgroundColor = "red";
+    }
+}
